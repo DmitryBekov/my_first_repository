@@ -1,0 +1,11 @@
+sentence = input("Введите предложение: ")
+print("Длина предложения:", len(sentence))
+lower_sentence = sentence.lower()
+print("Предложение в нижнем регистре:", lower_sentence)
+vowels = 'aeiou'
+count = sum(1 for char in lower_sentence if char in vowels)
+print("Количество гласных:", count)
+replaced_sentence = sentence.replace('ugly', 'beauty')
+print("После замены 'ugly' на 'beauty':", replaced_sentence)
+print("Начинается с 'The':", sentence.startswith('The'))
+print("Заканчивается на 'end':", sentence.endswith('end'))
