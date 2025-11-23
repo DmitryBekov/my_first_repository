@@ -1,0 +1,10 @@
+def fib(n):
+    a, b = 1, 1
+    for _ in range(n):
+        yield a
+        a, b = b, a + b
+
+# Получение 200-го числа Фибоначчи
+fib_gen = fib(200)
+result = list(fib_gen)[-1]
+print(result)
